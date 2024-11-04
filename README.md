@@ -28,7 +28,23 @@ This project uses a subset of the **Oxford Flowers 102** dataset. Follow these s
      tar -xf 102flowers.tgz
      ```
    - On Windows, you can use extraction tools like **WinRAR** or **7-Zip**.
+1. **Install Requirements:**
+   - This project requires Python and OpenCV. Install dependencies with:
+     ```bash
+     pip install -r requirements.txt
+     ```
 
-3. **Create a Subset of 100 Images:**
-   - After extraction, navigate to the `jpg` folder, which contains all images.
-   - Select 100 images manually or use the following Python code snippet to create a subset of 100 images:
+2. **Run the CBIR System:**
+   - To start the retrieval system, execute:
+     ```bash
+     python main.py
+     ```
+
+3. **Query Images:**
+   - Add query images to the `query_images` folder, and the system will retrieve visually similar images from the dataset.
+
+## Future Enhancements
+
+- Improve feature matching techniques.
+- Add more scenarios such as texture-based retrieval and material identification.
+- Optimize for faster retrieval times.
